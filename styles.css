@@ -1,0 +1,118 @@
+#menuButton {
+  background-color: transparent;
+  border-style: none;
+  font-size: 20px;
+}
+#menuButton:hover{
+  cursor: pointer;
+}
+body {
+  background-color: #cfcfcf;
+  font-family: "Open-Sans", sans-serif;
+  margin: 0px;
+  font-weight: 300;
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+}
+h1 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 600;
+}
+main {
+  padding: 0 10px;
+}
+#uiContainer {
+  display: flex;
+  flex: 0.5;
+}
+#sideMenu {
+  min-width: 15vw;
+  background-color: #585858;
+  height: 100vh;
+  padding: 10px;
+  overflow: hidden;
+  position: sticky;
+  transition: width 0.3s ease-in, padding 0.3s ease-in;
+}
+#sideMenu ul {
+  text-align: center;
+  list-style-type: none;
+  padding: 0px;
+}
+#sideMenu ul li {
+  background-color: transparent;
+  color: rgb(200, 200, 200);
+  font-style: 20px;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+#sideMenu ul li a:visited {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(200, 200, 200);
+  font-style: 20px;
+}
+
+#sideMenu ul li a {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(200, 200, 200);
+  font-style: 20px;
+}
+#sideMenu ul li a:hover  {
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+  font-style: 20px;
+}
+
+#sideMenu ul li:hover {
+  background-color: rgb(102, 102, 102);
+}
+
+table {
+  color: #a0a0a0;
+  
+}
+tr:nth-of-type(even){
+  background-color: rgb(181, 228, 255);
+}
+th[scope="col"]{
+  background-color: transparent;
+  color: rgb(26, 26, 26);
+  font-weight: 300;
+  padding-right: 90px;
+  text-align: left;
+}
+
+#tableContainer {
+  display: flex;
+  flex: 0.2;
+  flex-direction: column;
+}
+
+#buttonContainer {
+  display: flex;
+  background-color: transparent;
+  text-align: left;
+  flex-direction: row;
+  flex:0.3;
+  justify-content: right;
+  gap: 20px;
+  padding: 20px;
+
+}
+.actionButton {
+  color: white;
+  background-color: rgb(75, 99, 255);
+  border-radius: 100%;
+  border-color: transparent;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+button:hover {
+  cursor: pointer;
+}

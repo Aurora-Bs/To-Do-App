@@ -1,33 +1,63 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
-<head>
-    <link href="styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap&amp;_cacheOverride=1742344603579"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap&amp;_cacheOverride=1742344603579"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="uiContainer">
-        <div id="sideMenu" style="transition: width 0.3s, padding 0.3s; width: 15%; padding: 10px;">
-            <h1>To Do App</h1>
-            <ul>
-                <li>
-                    About
-                </li>
-                <li>Other Projects</li>
-                <li>Help</li>
-                <li>Home</li>
-            </ul>
+      <div
+        id="sideMenu"
+        style="transition: width 0.3s, padding 0.3s; width: 15%; padding: 10px"
+      >
+        <h1>To-do App</h1>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Other Projects</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </div>
+      <main>
+        <button id="menuButton" onclick="triggerMenu()">⋯</button>
+        <h1>Instructions</h1>
+        <p>
+          Click on the + icon to add a to do feature, or the 🗑 icon to remove
+          something from the list.
+        </p>
+        <br />
+        <!-- for table functionality -->
+        <div id="tableContainer">
+          <table id="dataTable">
+            <caption>
+              All of your tasks conveniently in one place
+            </caption>
+            <tr>
+              <th scope="col">Task</th>
+              <th scope="col">Decsription</th>
+              <th scope="col">Due Date</th>
+            </tr>
+          </table>
+          <div id="buttonContainer">
+            <button class="actionButton" id="add" onclick="addTask()">
+              +
+            </button>
+            <button class="actionButton" id="remove">
+              🗑
+            </button>
+            <button class="actionButton" id="remove">
+              ✎
+            </button>
+          </div>
         </div>
-        <main>
-            <h1>To Do App</h1>
-            <button id="menuButton" onclick="triggerMenu()">⋯</button>
-        </main>
+      </main>
     </div>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
