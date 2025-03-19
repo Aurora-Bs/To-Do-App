@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<link href="styles.css" rel="stylesheet">
+<html>
 <head>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap&amp;_cacheOverride=1742344603579"
+        rel="stylesheet">
 </head>
+
 <body>
-Hello World
+    <div id="uiContainer">
+        <div id="sideMenu" style="transition: width 0.3s, padding 0.3s; width: 15%; padding: 10px;">
+            <h1>To Do App</h1>
+            <ul>
+                <li>
+                    About
+                </li>
+                <li>Other Projects</li>
+                <li>Help</li>
+                <li>Home</li>
+            </ul>
+        </div>
+        <main>
+            <h1>To Do App</h1>
+            <button id="menuButton" onclick="triggerMenu()">⋯</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+
 </body>
+</html>
